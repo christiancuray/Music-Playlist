@@ -1,0 +1,109 @@
+body {
+  background-color: #17b3d2;
+  margin: auto;
+  width: 70%;
+}
+
+header {
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-gap: 10px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  width: 70%;
+  flex: 1;
+  padding: 20px 20px 2px 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5%;
+  background-color: #00d4ff;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card img:hover {
+  transform: rotate(360deg);
+  transition: 3s;
+  box-shadow: 0 10px 15px 0 rgba(29, 21, 177, 0.246);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px 0 rgba(29, 21, 177, 0.246);
+  transition: 0.4s;
+  transform: translateY(-12px);
+  cursor: pointer;
+  background: rgb(3, 130, 158);
+  background: radial-gradient(
+    circle,
+    rgba(3, 130, 158, 1) 0%,
+    rgba(7, 142, 172, 1) 26%,
+    rgba(4, 198, 241, 1) 56%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#selected-artist h2 a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+button {
+  padding: 20px 40px 20px 40px;
+  margin-right: 20px;
+  color: black;
+  background-color: #00d4ff;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 9%;
+}
+
+button:focus {
+  background-color: #03758c;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00d4ff;
+  transition: 0.4s;
+  font-weight: bold;
+  box-shadow: 0 10px 15px 0 rgba(29, 21, 177, 0.246);
+}
